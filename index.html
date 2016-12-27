@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>大前端jQuery弹出层效果 - 站长素材</title>
+<link rel="stylesheet" href="css/theme.css" media="all">
+<script src="js/jquery.min.js"></script>
+<script>
+jQuery(document).ready(function($) {
+	$('.theme-login').click(function(){
+		$('.theme-popover-mask').fadeIn(100);
+		$('.theme-popover').slideDown(200);
+	})
+	$('.theme-poptit .close').click(function(){
+		$('.theme-popover-mask').fadeOut(100);
+		$('.theme-popover').slideUp(200);
+	})
+})
+</script>
+</head>
+<body>
+<div class="theme-buy">
+	<a class="theme-login" href="javascript:;">点我查看效果</a>
+</div>
+<div class="theme-popover">
+     <div class="theme-poptit">
+          <a href="javascript:;" title="关闭" class="close">×</a>
+          <h3>登录 是一种态度</h3>
+     </div>
+</div>
+<div class="theme-popover-mask"></div>
+</body>
+</html>
