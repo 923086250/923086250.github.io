@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -31,3 +32,45 @@ jQuery(document).ready(function($) {
 <div class="theme-popover-mask"></div>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		
+		
+		<p id="latitude"></p>
+		<p id="longitude"></p>
+		
+	</body>
+	
+	<script>
+		
+		//console.log(navigator.geolocation);
+		
+		
+		var lat = document.getElementById("latitude");
+		
+		var lon = document.getElementById("longitude");
+		
+		//navigator.geolocation.getCurrentPosition可以获取用户
+		//设置提供的地理位置坐标。
+		
+		navigator.geolocation.getCurrentPosition(function(position){
+			
+			lat.innerHTML = position.coords.latitude;
+			
+			lon.innerHTML = position.coords.longitude;
+			
+		});
+		
+		
+	</script>
+	
+	
+</html>
+>>>>>>> 61dbd054b1535227a8f6f0f06599f50a74d0abbe
